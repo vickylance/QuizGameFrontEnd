@@ -1,0 +1,2 @@
+darkest - #121a21
+lighest - #3f5973

@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gamified E-Learning</title>
+    <!--[if lt IE 9]>
+    <script src="dist\js\html5shiv.min.js"></script>
+    <script src="dist\js\respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="dist\css\bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="dist\css\font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="dist\css\flat-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="dist\css\bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="dist\css\fileinput.min.css">
+    <link rel="stylesheet" type="text/css" href="dist\css\bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" type="text/css" href="dist\css\bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="dist\css\star-rating.min.css">
+    <link href="dist/css/animate.css" type="text/css" rel="stylesheet" />
+    <link href="dist/css/chartist.min.css" type="text/css" rel="stylesheet" />
+    <link href="dist/css/reset.css" type="text/css" rel="stylesheet" />
+    <link href="dist/css/style.css" type="text/css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="dist/img/logo/favicon.png" />
+
+    <script type="text/javascript" src="dist/js/modernizr.js"></script>
+    <style>
+        @font-face {
+            font-family: 'Harabara Mais Demo';
+            src: url('dist/fonts/harabara/Harabara Mais Demo.otf') format('opentype');
+        }
+
+        .navbar-fixed-top {
+            min-height: 80px;
+        }
+
+        .navbar-nav > li > a, .navbar-nav > li > a > img {
+            padding-top: 0;
+            padding-bottom: 0;
+            line-height: 80px;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-nav > li > a {
+                line-height: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        body {
+            scrollbar-base-color: #ff0000;
+            scrollbar-base-color: #ff0000;
+            scrollbar-3dlight-color: #27ae60;
+            scrollbar-highlight-color: #121a21;
+            scrollbar-track-color: #2c3e50;
+            scrollbar-arrow-color: #ff6a00;
+            scrollbar-shadow-color: #808080;
+            scrollbar-dark-shadow-color: #121a21;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-button {
+            background-color: #2c3e50;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #ff6a00;
+        }
+
+        ::-webkit-scrollbar-track-piece {
+            background-color: #7f8c8d;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            height: 50px;
+            background-color: #ecf0f1;
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-corner {
+            background-color: #0094ff;
+        }
+
+        }
+
+        ::-webkit-resizer {
+            background-color: #b200ff;
+        }
+    </style>
+
+</head>
+<body style="background-color: #3f5973; font-family:'Harabara Mais Demo'; letter-spacing: 2px;">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #121a21;">
+        <div class="container-fluid">
+            <div class="navbar-header" style="opacity: 1;">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#"><img class="pull-left" style="height: 30px; margin-top: 26px;" src="dist/img/logo/logo.png"></a><a class="navbar-brand" href="#" style="line-height: 50px;"><h4>&nbsp;Gam<span style="color: #27ae60;">E-Learn</span></h4></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--<ul class="nav navbar-nav" style=" opacity 1;">
+                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" style="background-color: #2c3e50;">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search" style="margin-top: 15px; opacity: 1;">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>-->
+                <ul class="nav navbar-nav navbar-right main-nav" style="opacity: 1;">
+                    <li><a href="#0" id="login_btn" class="cd-signin">Login</a></li>
+                    <li>
+                        <a href="#0" id="signup_btn" class="cd-signup">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="cd-user-modal">
+        <!-- this is the entire modal form, including the background -->
+        <div class="cd-user-modal-container" style="margin-top: 100px;">
+            <!-- this is the container wrapper -->
+            <ul class="cd-switcher">
+                <li><a href="#0">Sign in</a></li>
+                <li><a href="#0">New account</a></li>
+            </ul>
+            <div id="cd-login">
+                <!-- log in form -->
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signin-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signin-password" type="text" placeholder="Password">
+                        <a href="#0" class="hide-password">Hide</a>
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+                    <p class="fieldset">
+                        <input type="checkbox" id="remember-me" checked>
+                        <label for="remember-me">Remember me</label>
+                    </p>
+                    <p class="fieldset">
+                        <input class="full-width" type="submit" value="Login">
+                    </p>
+                </form>
+
+                <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+                <!-- <a href="#0" class="cd-close-form">Close</a> -->
+            </div> <!-- cd-login -->
+            <div id="cd-signup">
+                <!-- sign up form -->
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-username" for="signup-username">Username</label>
+                        <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signup-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signup-password" type="text" placeholder="Password">
+                        <a href="#0" class="hide-password">Hide</a>
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+                    <p class="fieldset">
+                        <input type="checkbox" id="accept-terms">
+                        <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+                    </p>
+                    <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Create account">
+                    </p>
+                </form>
+                <!-- <a href="#0" class="cd-close-form">Close</a> -->
+            </div> <!-- cd-signup -->
+            <div id="cd-reset-password">
+                <!-- reset password form -->
+                <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+                <form class="cd-form">
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                        <span class="cd-error-message">Error message here!</span>
+                    </p>
+                    <p class="fieldset">
+                        <input class="full-width has-padding" type="submit" value="Reset password">
+                    </p>
+                </form>
+                <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+            </div> <!-- cd-reset-password -->
+            <a href="#0" class="cd-close-form">Close</a>
+        </div> <!-- cd-user-modal-container -->
+    </div> <!-- cd-user-modal -->
+
+    <section class="cd-hero">
+        <ul class="cd-hero-slider autoplay">
+            <li class="selected">
+                <div class="cd-full-width">
+                    <h2>Hero slider</h2>
+                    <p>A simple, responsive slideshow in CSS &amp; jQuery.</p>
+                    <a href="http://codyhouse.co/?p=675" class="cd-btn">Article &amp; Download</a>
+                </div> <!-- .cd-full-width -->
+            </li>
+            <li>
+                <div class="cd-full-width">
+                    <h2>Hero slider</h2>
+                    <p>A simple, responsive slideshow in CSS &amp; jQuery.</p>
+                    <a href="http://codyhouse.co/?p=675" class="cd-btn">Article &amp; Download</a>
+                </div> <!-- .cd-full-width -->
+            </li>
+            <li>
+                <div class="cd-full-width">
+                    <h2>Hero slider</h2>
+                    <p>A simple, responsive slideshow in CSS &amp; jQuery.</p>
+                    <a href="http://codyhouse.co/?p=675" class="cd-btn">Article &amp; Download</a>
+                </div> <!-- .cd-full-width -->
+            </li>
+            <li>
+                <div class="cd-full-width">
+                    <h2>Hero slider</h2>
+                    <p>A simple, responsive slideshow in CSS &amp; jQuery.</p>
+                    <a href="http://codyhouse.co/?p=675" class="cd-btn">Article &amp; Download</a>
+                </div> <!-- .cd-full-width -->
+            </li>
+            <li>
+                <div class="cd-full-width">
+                    <h2>Hero slider</h2>
+                    <p>A simple, responsive slideshow in CSS &amp; jQuery.</p>
+                    <a href="http://codyhouse.co/?p=675" class="cd-btn">Article &amp; Download</a>
+                </div> <!-- .cd-full-width -->
+            </li>
+
+        </ul> <!-- .cd-hero-slider -->
+
+        <div class="cd-slider-nav">
+            <nav>
+                <span class="cd-marker item-1"></span>
+
+                <ul>
+                    <li class="selected"><a href="#0">Intro</a></li>
+                    <li><a href="#0">Tech 1</a></li>
+                    <li><a href="#0">Tech 2</a></li>
+                    <li><a href="#0">Video</a></li>
+                    <li><a href="#0">Image</a></li>
+                </ul>
+            </nav>
+        </div> <!-- .cd-slider-nav -->
+    </section> <!-- .cd-hero -->
+    <a href="#0" class="cd-top"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+    <script type="text/javascript" src="dist\js\jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="dist\js\flat-ui.min.js"></script>
+    <script type="text/javascript" src="dist\js\bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="dist\js\fileinput.min.js"></script>
+    <script type="text/javascript" src="dist\js\bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="dist\js\bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="dist\js\star-rating.min.js"></script>
+    <script type="text/javascript" src="dist/js/wow.min.js"></script>
+    <script type="text/javascript" src="dist/js/chartist.min.js"></script>
+    <script type="text/javascript" src="dist/js/main.js"></script>
+
+    <script type="text/javascript">
+        new WOW().init();
+        $(window).resize(function () {
+            $('section').css('height', $(window).height());
+        });
+        jQuery(document).ready(function ($) {
+            $('section').css('height', $(window).height());
+            $(".navbar-nav li").on('click', function () {
+                $(this).siblings().removeClass('active')
+                $(this).addClass('active');
+            })
+        });
+    </script>
+    <script type="text/javascript">
+        $(".form_datetime1").datetimepicker({ format: 'yyyy-mm-dd hh:ii', forceParse: true, autoclose: true, todayBtn: true });
+    </script>
+    <script type="text/javascript">
+        $(".form_datetime2").datetimepicker({ format: "dd MM yyyy - hh:ii", forceParse: true, autoclose: true, todayBtn: true });
+    </script>
+</body>
+</html>
